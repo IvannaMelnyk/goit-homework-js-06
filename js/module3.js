@@ -85,9 +85,8 @@ const users = [
     },
 ];
 // Write code under this line
-const getUsersWithGender = (array, gender) => array;
-
-// console.log(getUsersWithGender(users, 'male'));
+const getUsersWithGender = (array, user) => array.filter(({ gender }) => user === gender).map(({ name }) => name);
+console.log(getUsersWithGender(users, 'male'));
 
 /* [
   "Moore Hensley",
